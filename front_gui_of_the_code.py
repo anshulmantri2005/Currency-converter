@@ -1,5 +1,11 @@
-import tkinter as tk
-window = tk.Tk()
+from tkinter import *
+
+# importing ttk widgets from tkinter
+from tkinter import ttk
+from PIL import Image,ImageTk
+import json
+import requests
+
 cor0 = "#FFFFFF"     #WHITE
 cor1 = "#333333"     #BLACK
 cor2 = "#E85051"     #RED
