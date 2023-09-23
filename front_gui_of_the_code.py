@@ -1,3 +1,4 @@
+# importing everything from tkinter
 from tkinter import *
 
 # importing ttk widgets from tkinter
@@ -11,8 +12,7 @@ cor1 = "#333333"     #BLACK
 cor2 = "#E85051"     #RED
 cor3 = "#57FF53"     #GREEN
 cor4 = "#0000ff"     #BLUE
-cor5 = "#9467bd	"    #PURPLE
-cor6 = "#708090	"    #SLATEGRAY
+
 
 # creating the main window
 window = Tk()
@@ -30,10 +30,12 @@ top.grid(row=0,column=0)
 
 main = Frame(window,width=300,height=260,bg=cor0)
 main.grid(row=1,column=0)
+
+#logo of the currency converter
 icon = Image.open("icon2.jpg")
 icon = icon.resize((40,40))
 icon = ImageTk.PhotoImage(icon)
-
+#we create name of this gui 
 app_name = Label(top,image=icon, compound=LEFT, text="Currency Converter",height=5,padx=9,pady=25,anchor=CENTER,font=("arial 16 bold"),bg=cor3,fg=cor1)
 app_name.place(x=-9,y=0)
 
