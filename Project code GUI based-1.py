@@ -43,4 +43,24 @@ app_name.place(x=-9,y=0)
 #main frame
 result = Label(main,text=" ",width=16,height=2,pady=7,relief="solid",anchor=CENTER,font=("Ivy 15 bold"),bg=cor0,fg=cor2)
 result.place(x=50,y=10)
+#NAME AND CODE OF DIFFERENT COUNTRY CURRENCY
+currency = ["INR","CNY","EUR","JPY","PKR","RUB","USD","BDT","KZT","OMR"]
+
+from_lable = Label( main,text="FROM",width=8,height=1,pady=0,padx=0,relief="solid",anchor=CENTER,font=("Ivy 10 bold"),bg=cor0,fg=cor2)
+from_lable.place(x=63,y=90)
+
+combo1 = ttk.Combobox(main,width=8,justify=CENTER,font=("Ivy 12 bold"))
+combo1["values"] = (currency)
+combo1.place(x=50,y=115)
+
+to_lable = Label( main,text="TO",width=8,height=1,pady=0,padx=0,relief="solid",anchor=CENTER,font=("Ivy 10 bold"),bg=cor0,fg=cor2)
+to_lable.place(x=168,y=90)
+combo2 = ttk.Combobox(main,width=8,justify=CENTER,font=("Ivy 12 bold"))
+combo2["values"] = (currency)
+combo2.place(x=155,y=115)
+
+
+value = Entry(main,width=22,justify=CENTER,font=("Ivy 12 bold"),relief=SOLID)
+value.place(x=50,y=155)
+
 window.mainloop()
