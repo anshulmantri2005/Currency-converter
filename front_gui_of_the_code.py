@@ -30,4 +30,15 @@ top.grid(row=0,column=0)
 
 main = Frame(window,width=300,height=260,bg=cor0)
 main.grid(row=1,column=0)
+icon = Image.open("icon2.jpg")
+icon = icon.resize((40,40))
+icon = ImageTk.PhotoImage(icon)
+
+app_name = Label(top,image=icon, compound=LEFT, text="Currency Converter",height=5,padx=9,pady=25,anchor=CENTER,font=("arial 16 bold"),bg=cor3,fg=cor1)
+app_name.place(x=-9,y=0)
+
+
+#main frame
+result = Label(main,text=" ",width=16,height=2,pady=7,relief="solid",anchor=CENTER,font=("Ivy 15 bold"),bg=cor0,fg=cor2)
+result.place(x=50,y=10)
 window.mainloop()
