@@ -1,5 +1,3 @@
-
-
 # importing everything from tkinter
 from tkinter import *
 
@@ -14,8 +12,6 @@ cor1 = "#333333"     #BLACK
 cor2 = "#E85051"     #RED
 cor3 = "#57FF53"     #GREEN
 cor4 = "#0000ff"     #BLUE
-cor5 = "#00F5FF	"    #PURPLE
-cor6 = "#708090	"    #SLATEGRAY
 
 # creating the main window
 window = Tk()
@@ -114,4 +110,27 @@ value.place(x=50,y=155)
 button = Button(main,text="Convert",width=19,padx=5,height=1,bg=cor2,fg=cor0,font=("Ivy 12 bold"),command=convert)
 button.place(x=50,y=210)
 
+# CURRENCY STRENGTH
+mm= input("INPUT YES/NO IF YOU WANT CURRENCY STRENGTH LIST ALSO ")
+
+if(mm=='yes' or mm=='YES'):
+    print("The list is ")
+    print(
+        '''
+        Currency & Symbol	         Value In Rs	      Value in USD
+    #1 Kuwaiti Dinar (KWD)	           269.54                 3.24
+    #2 Bahraini Dinar (BHD)	           220.83	              2.65
+    #3 Omani Rial (OMR) 	           216.33	              2.60
+    #4 Jordanian Dinar (JOD)           117.62	              1.41
+    #5 British Pound (GBP)	           103.29	              1.24
+    #6 Gibraltar Pound (GIP)           103.27                 1.23
+    #7 Cayman Island Dollar (KYD)	   100.14	              1.20
+    #8 Swiss Franc (CHF)	            92.99                 1.12
+    #9 Euro (EUR)	                    88.88                 1.07
+    #10 United States Dollar (USD)	    83.29	              1.00
+        '''
+
+    )
+
+# this runs the window infinitely until it is closed
 window.mainloop()
